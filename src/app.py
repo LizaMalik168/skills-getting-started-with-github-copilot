@@ -69,3 +69,42 @@ if email in activity["participants"]:
     # Add Student 
     activity["participants"].append(email)
     return {"message": f"Signed up {email} for {activity_name}"}
+    # Add additional activities
+    activities.update({
+        "Soccer Team": {
+            "description": "Practice teamwork and skills for soccer matches",
+            "schedule": "Mondays and Wednesdays, 4:00 PM - 5:30 PM",
+            "max_participants": 22,
+            "participants": ["noah@mergington.edu", "mia@mergington.edu"]
+        },
+        "Basketball Club": {
+            "description": "Build basketball fundamentals and play friendly games",
+            "schedule": "Tuesdays and Thursdays, 4:00 PM - 5:30 PM",
+            "max_participants": 18,
+            "participants": ["ethan@mergington.edu", "ava@mergington.edu"]
+        },
+        "Art Club": {
+            "description": "Explore drawing, painting, and creative mixed media",
+            "schedule": "Wednesdays, 3:30 PM - 5:00 PM",
+            "max_participants": 15,
+            "participants": ["harper@mergington.edu", "noelle@mergington.edu"]
+        },
+        "Drama Club": {
+            "description": "Rehearse scenes and perform theatrical productions",
+            "schedule": "Fridays, 3:30 PM - 5:30 PM",
+            "max_participants": 20,
+            "participants": ["lucas@mergington.edu", "zoe@mergington.edu"]
+        },
+        "Debate Team": {
+            "description": "Develop persuasive speaking and critical thinking skills",
+            "schedule": "Thursdays, 4:00 PM - 5:30 PM",
+            "max_participants": 16,
+            "participants": ["nathan@mergington.edu", "sarah@mergington.edu"]
+        },
+        "Science Club": {
+            "description": "Conduct experiments and explore scientific topics",
+            "schedule": "Mondays, 3:30 PM - 5:00 PM",
+            "max_participants": 18,
+            "participants": ["grace@mergington.edu", "liam@mergington.edu"]
+        }
+    })
